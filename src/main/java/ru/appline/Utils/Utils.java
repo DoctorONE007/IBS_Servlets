@@ -45,7 +45,7 @@ public class Utils {
                                     .collect(Collectors.joining(", ", "{", "}")),
                             StandardCharsets.UTF_8) +
                     "</h3>" +
-                    "<a href=\"../index.jsp\">Домой</a>" +
+                    "<a href=\"index.jsp\">Домой</a>" +
                     "</html>");
             return null;
         }
@@ -103,7 +103,7 @@ public class Utils {
                                     .collect(Collectors.joining(", ", "{", "}")),
                             StandardCharsets.UTF_8) +
                     "</h3>" +
-                    "<a href=\"../index.jsp\">Домой</a>" +
+                    "<a href=\"index.jsp\">Домой</a>" +
                     "</html>");
             return null;
         }
@@ -132,14 +132,14 @@ public class Utils {
                     "</ul>");
         }
         pw.print("</ul>" +
-                "<a href=\"../index.jsp\">Домой</a>" +
+                "<a href=\"index.jsp\">Домой</a>" +
                 "</html>");
     }
 
     public static void printNullUser(PrintWriter pw, int id) {
         pw.print("<html>" +
                 "<h3>Пользователя с id " + id + " нет :(</h3>" +
-                "<a href=\"../index.jsp\">Домой</a>" +
+                "<a href=\"index.jsp\">Домой</a>" +
                 "</html>");
     }
 
@@ -150,7 +150,7 @@ public class Utils {
                 "Имя: " + model.getModel().get(id).getName() + "<br/>" +
                 "Фамилия: " + model.getModel().get(id).getSurname() + "<br/>" +
                 "Зарплата: " + model.getModel().get(id).getSalary() + "<br/>" +
-                "<a href=\"../index.jsp\">Домой</a>" +
+                "<a href=\"index.jsp\">Домой</a>" +
                 "</html>");
     }
 
@@ -162,14 +162,14 @@ public class Utils {
                 "Имя: " + user.getName() + "<br/>" +
                 "Фамилия: " + user.getSurname() + "<br/>" +
                 "Зарплата: " + user.getSalary() + "<br/>" +
-                "<a href=\"../index.jsp\">Домой</a>" +
+                "<a href=\"index.jsp\">Домой</a>" +
                 "</html>");
     }
 
     public static void printCrateUserMsg(PrintWriter pw, User user) {
         pw.println("<html>" +
                 "<h3>Пользователь " + user.getName() + " " + user.getSurname() + " с зарплатой= " + user.getSalary() + " успешно создан! :)</h3>" +
-                "<a href=\"../index.jsp\">Домой</a>" +
+                "<a href=\"index.jsp\">Домой</a>" +
                 "</html>");
     }
 
@@ -177,7 +177,7 @@ public class Utils {
         pw.println("<html>" +
                 "<h3>Данные изменены " + model.getModel().get(id).getName() + " " + model.getModel().get(id).getSurname() +
                 " с зарплатой= " + model.getModel().get(id).getSalary() + "</h3>" +
-                "<a href=\"../index.jsp\">Домой</a>" +
+                "<a href=\"index.jsp\">Домой</a>" +
                 "</html>");
     }
 
@@ -213,7 +213,7 @@ public class Utils {
                                     .collect(Collectors.joining(", ", "{", "}")),
                             StandardCharsets.UTF_8) +
                     "</h3>" +
-                    "<a href=\"../index.jsp\">Домой</a>" +
+                    "<a href=\"index.jsp\">Домой</a>" +
                     "</html>");
             return null;
         }
@@ -245,7 +245,7 @@ public class Utils {
                                         .collect(Collectors.joining(", ", "{", "}")),
                                 StandardCharsets.UTF_8) +
                         "</h3>" +
-                        "<a href=\"../index.jsp\">Домой</a>" +
+                        "<a href=\"index.jsp\">Домой</a>" +
                         "</html>");
             }
             return null;
@@ -275,7 +275,7 @@ public class Utils {
                     pw.print("<html>" +
                             "<h3>Неподдерживаемая операция " + request.getParameter("math") +
                             "</h3>" +
-                            "<a href=\"../index.jsp\">Домой</a>" +
+                            "<a href=\"index.jsp\">Домой</a>" +
                             "</html>");
                 }
                 return null;
@@ -287,7 +287,7 @@ public class Utils {
         pw.print("<html>" +
                 "<h3>Результат " + res +
                 "</h3>" +
-                "<a href=\"../index.jsp\">Домой</a>" +
+                "<a href=\"index.jsp\">Домой</a>" +
                 "</html>");
     }
 

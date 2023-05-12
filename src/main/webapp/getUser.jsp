@@ -13,12 +13,12 @@
     Model model = Model.getInstance();
     out.print(model.getModel().size());
 %>
-<form method="get" action="users">
+<form method="get" action="get">
     <label>ID:
         <input type="text" name="id"><br/>
     </label>
     <button type="submit">Поиск</button>
 </form>
-<a href="../index.jsp">Домой</a>
+<a href="index.jsp">Домой</a>
 </body>
 </html>
